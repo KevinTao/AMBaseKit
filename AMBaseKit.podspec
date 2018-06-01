@@ -29,6 +29,7 @@ s.description      = 'AMBaseKit contains base network component ,base color mana
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'AMBaseKit/Classes/**/*'
+  s.swift_version = '4.0'
   
   s.resource_bundles = {
     'AMColorKit' => ['AMBaseKit/Assets/Colors.plist'],
