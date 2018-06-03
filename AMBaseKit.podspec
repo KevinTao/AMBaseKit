@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AMBaseKit'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'AMBaseKit is a convaince framework for create ios project'
 
 # This description is used to generate tags and improve search results.
@@ -29,7 +29,7 @@ s.description      = 'AMBaseKit contains base network component ,base color mana
   s.ios.deployment_target = '8.0'
 
   #s.source_files = 'AMBaseKit/Classes/**/*'
-  s.swift_version = '4.0'
+  s.swift_version = '4.1'
   
   s.resource_bundles = {
     'AMColorKit' => ['AMBaseKit/Assets/Colors.plist'],
