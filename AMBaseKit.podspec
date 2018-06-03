@@ -28,18 +28,27 @@ s.description      = 'AMBaseKit contains base network component ,base color mana
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'AMBaseKit/Classes/**/*'
+  #s.source_files = 'AMBaseKit/Classes/**/*'
   s.swift_version = '4.0'
   
   s.resource_bundles = {
     'AMColorKit' => ['AMBaseKit/Assets/Colors.plist'],
     'AMNetworkKit' => ['AMBaseKit/Assets/Hosts.plist']
   }
-  s.dependency 'AFNetworking', '~> 3.2.1'
-  s.dependency 'Jelly'
+  
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   
-  
+  s.subspec 'Networking' do |ss|
+      ss.source_files = 'AMBaseKit/Classes/Networking/*'
+      ss.dependency 'AFNetworking', '~> 3.2.1'
+  end
+  s.subspec 'Utility' do |ss|
+      ss.source_files = 'AMBaseKit/Classes/Utility/*'
+  end
+  s.subspec 'BaseViewControllers' do |ss|
+      ss.source_files = 'AMBaseKit/Classes/BaseViewControllers/*'
+      ss.dependency 'Jelly'
+  end
 end

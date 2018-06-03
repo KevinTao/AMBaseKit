@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        var colormanager = ColorManager.init()
+        let colormanager = ColorManager.init()
         self.view.backgroundColor = colormanager.theme?.background
     }
 
