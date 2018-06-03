@@ -42,7 +42,7 @@ s.description      = 'AMBaseKit contains base network component ,base color mana
   
   s.subspec 'Networking' do |ss|
       ss.source_files = 'AMBaseKit/Classes/Networking/*'
-      ss.dependency 'AFNetworking'
+      ss.dependency 'AFNetworking', '~> 3.2.1'
   end
   s.subspec 'Utility' do |ss|
       ss.source_files = 'AMBaseKit/Classes/Utility/*'
